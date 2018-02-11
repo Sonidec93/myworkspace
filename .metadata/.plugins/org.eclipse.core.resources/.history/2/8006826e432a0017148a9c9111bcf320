@@ -1,0 +1,17 @@
+package resources;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
+public class AppConfig {
+	
+	public static final Properties PROPERTIES;
+	public static final InputStream inputStream=null;
+	
+	static{
+		
+		inputStream=new FileInputStream("src/resources/configuration.properties");
+	}
+
+}

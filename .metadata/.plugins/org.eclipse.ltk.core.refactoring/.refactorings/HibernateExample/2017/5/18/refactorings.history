@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;HibernateOnetoOne/src&apos;&#x0D;&#x0A;- Original project: &apos;HibernateExample&apos;&#x0D;&#x0A;- Destination element: &apos;HibernateOnetoOne/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     HibernateExample/src/resources&#x0D;&#x0A;     HibernateExample/src/entity&#x0D;&#x0A;     HibernateExample/src/com.practice.beans" description="Copy packages" destination="=HibernateOnetoOne/src" element1="/src&lt;resources" element2="/src&lt;entity" element3="/src&lt;com.practice.beans" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1493621399497" version="1.0"/>
+</session>

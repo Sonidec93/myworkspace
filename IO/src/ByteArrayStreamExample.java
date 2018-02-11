@@ -1,0 +1,43 @@
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+
+public class ByteArrayStreamExample {
+	public static void main(String[] args) {
+
+		try {
+			FileOutputStream fout=new FileOutputStream("E:\\orange.txt");
+
+			ByteArrayOutputStream bout=new ByteArrayOutputStream();
+
+			String a="playing eoth bytearray";
+			System.out.println("bytearrayoutputstream holds the copy of the data and then forwards it to multiple streams");
+			System.out.println("The buffer of bytearray stream grows automatically");
+			bout.write(a.getBytes());
+
+			bout.writeTo(fout);
+
+			bout.close();
+			fout.close();
+
+			byte [] bs={65,97,98,99};
+			ByteArrayInputStream bin=new ByteArrayInputStream(bs);
+
+			System.out.println("bytearrayinput stream is used to read an byte array as an input stream");
+
+			int value=0;
+			while((value=bin.read())!=-1){
+				System.out.println((char)value);
+			}
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+
+	}
+}

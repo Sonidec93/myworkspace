@@ -1,0 +1,10 @@
+package com.practice.trycatch;
+
+public class TryCatchExample {
+
+	
+	public static void main(String [] arg){
+		
+		
+	}
+}

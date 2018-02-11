@@ -1,0 +1,36 @@
+package cloneExample;
+
+public class ClassToBeCloned implements Cloneable {
+	
+	public static int count=0;
+	public ClassToBeCloned(){
+		
+		if((count==0))
+		System.out.println(" clone Class Created");
+		count++;
+	}
+	
+	public Object clone() throws CloneNotSupportedException{
+		
+	return super.clone();
+		
+	}
+	
+	private void getValue(){
+		System.out.println("The value of the static counter is "+count);
+	}
+	
+	public static void main(String [] arg){
+		
+		ClassToBeCloned obj=new ClassToBeCloned();
+		
+		try {
+			ClassToBeCloned obj2=(ClassToBeCloned)obj.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+
+}

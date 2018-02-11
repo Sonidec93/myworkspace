@@ -1,0 +1,50 @@
+package com.practice.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import resources.HibernateUtility;
+
+import com.practice.beans.Account;
+
+import entity.AccountEntity;
+import entity.EmployeeEntity;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	private static final Logger logger;
+	
+	static{
+		DOMConfigurator.configure("src/resources/Log4j.xml");
+		logger=Logger.getLogger(EmployeeDaoImpl.class);
+	}
+	@Override
+	public void addAccountsToEmployee(List<Account> accoList, String EmpName) {
+		// TODO Auto-generated method stub
+		SessionFactory sf=HibernateUtility.createSessionFactory();
+		Session session=sf.openSession();
+		try{
+			
+			EmployeeEntity emp=new EmployeeEntity();
+			emp.setEmpName(EmpName);
+			List<AccountEntity> accountEntities=new ArrayList<AccountEntity>();
+			for(Account obj:accoList){
+				
+				AccountEntity accountEntity=new AccountEntity();
+				accountEntity.setAmount(obj.getAmount());
+				accountEntities.add(accountEntity)
+			}
+			
+		}catch(Exception e){
+				logger.error(e.getMessage(),e);
+		}finally{
+			session.close();
+		}
+	}
+
+}

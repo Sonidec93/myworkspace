@@ -1,0 +1,17 @@
+package com.practice.Dao;
+
+import org.hibernate.SessionFactory;
+
+import resources.HibernateUtility;
+
+public class EmployeeDaoImpl {
+	
+	
+	public Integer addEmployee(String name){
+		SessionFactory sf=HibernateUtility.createSessionFactory();
+		
+		
+		
+	}
+
+}

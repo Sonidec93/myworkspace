@@ -1,0 +1,19 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+
+public class FileIOStreamExample {
+
+	public static void main(String[] args) {
+		
+		try {
+			FileOutputStream fout=new FileOutputStream("D:\\example.txt");
+			
+			String a="hi my name is mukul";
+			fout.write(a.getBytes());
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

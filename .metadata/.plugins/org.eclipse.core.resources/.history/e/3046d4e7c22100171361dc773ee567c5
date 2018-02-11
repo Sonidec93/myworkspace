@@ -1,0 +1,9 @@
+import java.io.File;
+
+
+public class SequenceInputStreamExample {
+
+	public static void main(String[] args) {
+		File obj= new File("E:\\orange.txt")
+	}
+}

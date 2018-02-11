@@ -1,0 +1,17 @@
+package ui;
+
+import com.practice.beans.Employee;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		try{
+		Employee emp=new Employee();
+			emp.setEmpName("Mukul");
+
+		}catch(Exception e){
+	
+}
+}
+}

@@ -1,0 +1,10 @@
+import java.io.FileWriter;
+
+
+public class FileWriterExample {
+	public static void main(String[] args) {
+		
+		FileWriter fw=new FileWriter("E:\\orange.txt")
+		
+	}
+}

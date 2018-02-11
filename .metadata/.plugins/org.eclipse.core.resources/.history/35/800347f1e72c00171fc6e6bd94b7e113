@@ -1,0 +1,61 @@
+package ui;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import resources.AppConfig;
+import resources.HibernateUtility;
+
+import com.practice.dao.EmployeeDaoImpl;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		try{
+
+			/*	System.out.println("----Adding an Employee------");
+		Employee emp=new Employee();
+			emp.setEmpName("Mukul");
+			emp.setEmpId(100);
+			EmployeeDaoImpl obj=new EmployeeDaoImpl();
+			obj.addEmployee(emp);
+			HibernateUtility.closeSessionFactory();*/
+
+
+			/*System.out.println("----fetching an employee----");
+
+			EmployeeDaoImpl obj=new EmployeeDaoImpl();
+			Employee employee=obj.getEmployee(100);
+			HibernateUtility.closeSessionFactory();
+
+			if(employee!=null){
+
+				System.out.println("------Employee Details------");
+				System.out.println("Employee ID: "+employee.getEmpId());
+				System.out.println("Employee Name: "+employee.getEmpName());
+
+			}*/
+
+			/*System.out.println("------Updating an employee-----");
+			EmployeeDaoImpl obj=new EmployeeDaoImpl();
+			obj.updateEmployee(100);
+			 */
+
+
+			System.out.println("--Deleting an employee----");
+			EmployeeDaoImpl obj=new EmployeeDaoImpl();
+			obj.deleteEmployee(101);
+			System.out.println(AppConfig.PROPERTIES.getProperty("Delete_success"));
+
+		}catch(Exception e){
+			DOMConfigurator.configure("src/resources/Log4j.xml");
+			Logger logger = Logger.getLogger(MainClass.class);
+			logger.error(e.getMessage(), e);
+			throw e;
+		}
+		finally{
+			HibernateUtility.closeSessionFactory();
+		}
+	}
+}

@@ -1,0 +1,75 @@
+package com.practice.dao;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import resources.HibernateUtility;
+
+import com.practice.beans.Account;
+import com.practice.beans.Employee;
+
+import entity.AccountEntity;
+import entity.EmployeeEntity;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	private static final Logger LOGGER;
+
+	static{
+		DOMConfigurator.configure("src/resources/Log4j.xml");
+		LOGGER=Logger.getLogger(EmployeeDaoImpl.class);
+	}
+
+	@Override
+	public Account findAccountOfEmployee(Employee emp) {
+		// TODO Auto-generated method stub 	
+		SessionFactory sf=HibernateUtility.createSessionFactory();
+		Session session=sf.openSession();
+		Account account=null;
+		try{
+
+			EmployeeEntity obj=(EmployeeEntity)session.get(EmployeeEntity.class,emp.getEmpId());
+
+			if(obj.getAccount()!=null){
+				account=new Account();
+				account.setAccountNumber(obj.getAccount().getAccountNumber());
+				account.setAmount(obj.getAccount().getAmount());
+			}
+
+		}catch(Exception e){
+			LOGGER.error(e.getMessage(),e);
+			throw e;
+		}finally{
+			if(session.isOpen()||session!=null){
+				session.close();
+			}
+		}
+
+		return account;
+	}
+
+	@Override
+	public void addAcountToEmployee(Account account, Employee obj) {
+		// TODO Auto-generated method stub
+		SessionFactory sf=HibernateUtility.createSessionFactory();
+		Session session=sf.openSession();
+
+		try{
+
+			AccountEntity acc=(AccountEntity)session.get(AccountEntity.class,account.getAccountNumber());
+			
+			if(acc!=null){
+				
+				EmployeeEntity emp=new EmployeeEntity();
+			}
+			
+		}catch(Exception e){
+			LOGGER.error(e.getMessage(),e);
+		}
+
+
+	}
+
+}

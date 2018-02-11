@@ -1,0 +1,29 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+
+
+public class LocalDateExample {
+	public static void main(String[] args) {
+
+		LocalDate obj=LocalDate.now();
+		System.out.println(obj.getDayOfMonth());
+		System.out.println(obj.atStartOfDay());
+		System.out.println(obj.getDayOfYear());
+		System.out.println(obj.getMonthValue());
+		System.out.println(obj.isLeapYear());
+		LocalDate obj2=LocalDate.of(2018,4,10);
+
+		System.out.println(obj.isBefore(obj2));
+		LocalDateTime localdt=LocalDateTime.now();
+		System.out.println(localdt);
+
+		//System.out.println(ChronoUnit.MINUTES.between(,obj2));
+
+
+		Calendar obj=Calendar.getInstance()
+
+
+	}
+}

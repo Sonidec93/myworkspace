@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.practice.tryc&apos; to &apos;com.practice.trycatch&apos;&#x0D;&#x0A;- Original project: &apos;ExceptionHandling&apos;&#x0D;&#x0A;- Original element: &apos;ExceptionHandling/src/com.practice.tryc&apos;&#x0D;&#x0A;- Renamed element: &apos;ExceptionHandling/src/com.practice.trycatch&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.practice.tryc&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.practice.tryc" name="com.practice.trycatch" qualified="false" references="true" stamp="1491721591116" textual="false" version="1.0"/>
+</session>

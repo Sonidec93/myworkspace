@@ -1,0 +1,17 @@
+127.0.0.1 - - [27/Dec/2017:21:46:16 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:21:46:18 +0530] "GET /Spring-mvc-demo/ HTTP/1.1" 200 349
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:21:46:22 +0530] "GET /Spring-mvc-demo/showForm HTTP/1.1" 200 273
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:21:46:28 +0530] "GET /Spring-mvc-demo/processFromVersionThree?studentName=mukul HTTP/1.1" 200 143
+127.0.0.1 - - [27/Dec/2017:21:48:55 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:21:48:57 +0530] "GET /Spring-mvc-demo/ HTTP/1.1" 200 355
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:21:48:59 +0530] "GET /Spring-mvc-demo/funny/showForm HTTP/1.1" 200 273
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:21:49:07 +0530] "GET /Spring-mvc-demo/funny/processFromVersionThree?studentName=sukhman HTTP/1.1" 200 145
+127.0.0.1 - - [27/Dec/2017:22:57:30 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:22:57:32 +0530] "GET /Spring-mvc-demo/ HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:22:57:34 +0530] "GET /Spring-mvc-demo/student/showForm HTTP/1.1" 200 788
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:22:57:42 +0530] "GET /Spring-mvc-demo/student/processStudentForm?firstName=mukul&lastName=kumra&country=Australia&language=Java HTTP/1.1" 200 282
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:23:13:07 +0530] "GET /Spring-mvc-demo/student/processStudentForm?firstName=mukul&lastName=kumra&country=Australia&language=Java HTTP/1.1" 200 282
+127.0.0.1 - - [27/Dec/2017:23:29:42 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:23:29:43 +0530] "GET /Spring-mvc-demo/ HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:23:29:45 +0530] "GET /Spring-mvc-demo/student/showForm HTTP/1.1" 200 1114
+0:0:0:0:0:0:0:1 - - [27/Dec/2017:23:30:02 +0530] "GET /Spring-mvc-demo/student/processStudentForm?firstName=mukul&lastName=kumra&country=Australia&language=Java&operatingSystems=Windows&_operatingSystems=on&operatingSystems=Linux&_operatingSystems=on HTTP/1.1" 200 358

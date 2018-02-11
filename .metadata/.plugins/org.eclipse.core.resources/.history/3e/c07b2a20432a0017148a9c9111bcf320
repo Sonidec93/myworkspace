@@ -1,0 +1,15 @@
+package resources;
+
+import java.io.InputStream;
+import java.util.Properties;
+
+public class AppConfig {
+	
+	public static final Properties;
+	public static final InputStream;
+	
+	static{
+		
+	}
+
+}

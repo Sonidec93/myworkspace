@@ -1,0 +1,8 @@
+package com.practice.beans;
+
+public class Account {
+
+	
+	private int accountNumber;
+	private Double amount;
+}

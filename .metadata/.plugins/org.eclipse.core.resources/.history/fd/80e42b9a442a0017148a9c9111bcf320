@@ -1,0 +1,46 @@
+package com.practice.properties;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Properties;
+import java.util.Set;
+
+public class PropertiesExample {
+
+	public static void main(String[] args) {
+
+		try {
+			FileInputStream fin=new FileInputStream("exampl.properties");
+
+			Properties prop=new Properties();
+			prop.load(fin);
+			System.out.println(prop.getProperty("name"));
+
+			prop=System.getProperties();
+
+			Set set=prop.entrySet();
+
+			Iterator iterator=set.iterator();
+
+			while(iterator.hasNext()){
+				Entry entry=(Entry) iterator.next();
+				System.out.print(entry.getKey()+" :");
+				System.out.println(entry.getValue());
+
+
+			}
+			
+			for(Entry e :prop.entrySet()){
+				
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+	}
+
+}

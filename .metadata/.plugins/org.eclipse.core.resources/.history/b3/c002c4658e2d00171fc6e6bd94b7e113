@@ -1,0 +1,12 @@
+package com.practice.ui;
+
+import com.practice.Dao.EmployeeDaoImpl;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		EmployeeDaoImpl obj=new EmployeeDaoImpl();
+	}
+
+}

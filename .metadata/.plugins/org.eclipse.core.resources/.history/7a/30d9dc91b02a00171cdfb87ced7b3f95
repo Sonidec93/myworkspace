@@ -1,0 +1,25 @@
+package ui;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import resources.HibernateUtility;
+
+import com.practice.beans.Employee;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		try{
+		Employee emp=new Employee();
+			emp.setEmpName("Mukul");
+
+		}catch(Exception e){
+			DOMConfigurator.configure("src/resources/Log4j.xml");
+			Logger logger = Logger.getLogger(MainClass.class);
+			logger.error(exception.getMessage(), exception);
+			throw exception;
+}
+}
+}

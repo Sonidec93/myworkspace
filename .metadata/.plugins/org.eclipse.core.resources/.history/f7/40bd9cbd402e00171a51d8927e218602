@@ -1,0 +1,27 @@
+package main;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import resources.HibernateUtility;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		try{
+			
+			
+		}catch(Exception e){
+			DOMConfigurator.configure("src/resources/Log4j.xml");
+			Logger.getLogger(MainClass.class).error(e.getMessage(),e);
+		}finally{
+			
+			HibernateUtility.closeSessionFactory();
+			
+		
+		}
+		
+	}
+
+}

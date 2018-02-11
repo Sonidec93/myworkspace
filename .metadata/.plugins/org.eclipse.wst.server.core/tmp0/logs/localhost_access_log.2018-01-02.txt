@@ -1,0 +1,4 @@
+127.0.0.1 - - [02/Jan/2018:23:23:34 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [02/Jan/2018:23:23:35 +0530] "GET /Springmvchibernate/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Jan/2018:23:23:36 +0530] "GET /Springmvchibernate/customer/list HTTP/1.1" 200 612
+0:0:0:0:0:0:0:1 - - [02/Jan/2018:23:23:42 +0530] "GET /Springmvchibernate/customer/addCustomer HTTP/1.1" 404 992

@@ -1,0 +1,12 @@
+package com.practice.Dao;
+
+public class EmployeeDaoImpl {
+	
+	
+	public Integer addEmployee(String name){
+		
+		
+		
+	}
+
+}

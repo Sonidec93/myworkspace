@@ -1,0 +1,11 @@
+package com.connect.mysql;
+
+public class DBConnect {
+	
+public DBConnect() {
+
+	Class.forName("com.mysql.jdbc.Driver");
+	
+}
+
+}

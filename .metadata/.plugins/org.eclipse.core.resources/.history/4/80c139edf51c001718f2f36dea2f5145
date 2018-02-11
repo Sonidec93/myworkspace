@@ -1,0 +1,25 @@
+package com.practice.trycatch;
+
+public class TryCatchExample {
+
+	
+	public static void main(String [] arg){
+	try{
+		int a[]=new int[5];
+		
+		a[5]=10;
+		System.out.println(a);
+		System.out.println("hello");
+	}
+	catch(ArithmeticException e){
+		
+		System.out.println(e.getMessage());
+	}
+	catch(ArrayIndexOutOfBoundsException e){
+		System.out.println(e);
+	}
+	catch(Exception e){
+		System.out.println(e.getMessage());
+	}
+	}
+}

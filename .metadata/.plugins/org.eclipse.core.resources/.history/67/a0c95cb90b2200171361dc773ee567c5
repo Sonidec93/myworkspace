@@ -1,0 +1,18 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
+
+public class PrintStreamExample {
+	public static void main(String[] args) {
+
+		try {
+			FileInputStream fin=new FileInputStream("E:\\data.txt");
+			PrintStream ps=new PrintStream(fin);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}

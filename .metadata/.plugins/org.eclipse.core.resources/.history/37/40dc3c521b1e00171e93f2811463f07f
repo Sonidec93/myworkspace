@@ -1,0 +1,42 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import java.util.Date;
+
+
+public class LocalDateExample {
+	public static void main(String[] args) throws ParseException {
+
+		LocalDate obj=LocalDate.now();
+		System.out.println(obj.getDayOfMonth());
+		System.out.println(obj.atStartOfDay());
+		System.out.println(obj.getDayOfYear());
+		System.out.println(obj.getMonthValue());
+		System.out.println(obj.isLeapYear());
+		LocalDate obj2=LocalDate.of(2018,4,10);
+
+		System.out.println(obj.isBefore(obj2));
+		LocalDateTime localdt=LocalDateTime.now();
+		System.out.println(localdt);
+
+		//System.out.println(ChronoUnit.MINUTES.between(,obj2));
+
+
+		Calendar cal=Calendar.getInstance();
+		System.out.println(cal.getTime());
+		
+		Date date=cal.getTime();
+		Calendar cal2=Calendar.getInstance();
+		System.out.println(cal.before(cal2));
+		
+		SimpleDateFormat dtf=new SimpleDateFormat("E,hh:mm:ss zz");
+		
+		System.out.println(dtf.parse("Mon,22:55:30"));
+
+
+	}
+}

@@ -1,0 +1,11 @@
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+
+
+public class DataStreamExample {
+	public static void main(String[] args) {
+		
+		FileInputStream fin=new FileInputStream("E:\\orange.txt");
+		
+	}
+}

@@ -1,0 +1,9 @@
+import java.io.FileInputStream;
+
+
+public class PrintStreamExample {
+public static void main(String[] args) {
+	
+	FileInputStream fin=new FileInputStream("E:\\data.txt");
+}
+}

@@ -1,0 +1,26 @@
+package ui;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import com.practice.beans.Employee;
+import com.practice.dao.EmployeeDaoImpl;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		try{
+		Employee emp=new Employee();
+			emp.setEmpName("Mukul");
+			
+			EmployeeDaoImpl obj=new EmployeeDaoImpl();
+
+		}catch(Exception e){
+			DOMConfigurator.configure("src/resources/Log4j.xml");
+			Logger logger = Logger.getLogger(MainClass.class);
+			logger.error(e.getMessage(), e);
+			throw e;
+}
+}
+}

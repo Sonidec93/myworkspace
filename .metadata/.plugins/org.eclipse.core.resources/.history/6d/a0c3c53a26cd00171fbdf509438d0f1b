@@ -1,0 +1,19 @@
+package cloneExample;
+
+public class ClassToBeCloned implements Cloneable {
+	
+	public static int count=0;
+	public ClassToBeCloned(){
+		
+		if(!(count==0))
+		System.out.println(" clone Class Created");
+		count++;
+	}
+	
+	public Object clone() throws CloneNotSupportedException{
+		
+	return super.clone();
+		
+	}
+
+}

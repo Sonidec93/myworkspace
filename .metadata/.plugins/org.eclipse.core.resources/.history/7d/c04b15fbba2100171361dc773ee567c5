@@ -1,0 +1,15 @@
+import java.io.FileInputStream;
+
+
+public class BufferedStreamExample {
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Java uses the concept of buffered stream make the I/O operstions faster");
+		System.out.println("it stores an internal buffer");
+		
+		FileInputStream fin= new FileInputStream("E:\\example.txt");
+	}
+
+}

@@ -1,0 +1,130 @@
+package com.pratice.set;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+
+class Book implements Comparable<Book>{
+
+	private String BookName;
+	private Double price;
+
+	public Book(String BookName,Double price){
+		this.BookName=BookName;
+		this.price=price;
+
+	}
+	public String getBookName() {
+		return BookName;
+	}
+	public void setBookName(String bookName) {
+		BookName = bookName;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	
+	
+	@Override
+	public int compareTo(Book o) {
+		return this.BookName.compareTo(o.getBookName());
+	}
+
+	public int hashCode()//hasCode an equals contract should be fullfilled each time 
+	{
+		return 1;
+	}
+
+	public boolean equals(Object o){
+
+		Book obj=(Book)o;
+		if(this.BookName.equals(obj.BookName)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+}
+
+
+
+public class SetExample {
+
+	public static void main(String [] arg){
+
+		Set<String> set=new HashSet<String>();
+//Book object=new Book("mukul",100.0);
+
+		set.add("mukul");
+
+		set.add("paresh");
+
+		System.out.println(set);
+
+
+
+
+		Set<Book> set2=new HashSet<Book>();
+
+		set2.add(new Book("journey",200.0));
+		set2.add(new Book("truth",300.0));
+		set2.add(new Book("truth",300.0));
+
+		Iterator<Book> itr=set2.iterator();
+
+		while(itr.hasNext()){
+
+			System.out.println(itr.next().getBookName());
+		}
+
+		System.out.println("--contains--");
+
+		System.out.println(set2.contains(new Book("journey",200.0)));
+
+		Set<Book> set3=new HashSet<Book>();
+		set3.add(new Book("truth",300.0));
+		set3.add(new Book("truth",300.0));
+		System.out.println(set2.containsAll(set3));
+
+		LinkedHashSet<Book> lhs=new LinkedHashSet<Book>();
+
+		lhs.add(new Book("journey",200.0));
+		lhs.add(new Book("truth",300.0));
+		lhs.add(new Book("Maa",300.0));
+
+		for(Book obj:lhs)
+		{
+			System.out.println(obj.getBookName());
+		}
+
+
+		TreeSet<Book> ts=new TreeSet<Book>();
+		ts.add(new Book("journey",200.0));
+		ts.add(new Book("truth",300.0));
+		ts.add(new Book("maa",300.0));
+		ts.add(new Book("maa",400.0));
+		for(Book b:ts){
+
+			System.out.println(b.getBookName());
+		}
+
+
+		System.out.println("TreeSet----first---");
+
+		System.out.println(ts.first().getBookName());
+
+		System.out.println("Tree---last---");
+		System.out.println(ts.last().getBookName());
+
+	}
+
+
+}

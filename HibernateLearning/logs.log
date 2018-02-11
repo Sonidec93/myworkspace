@@ -1,0 +1,1 @@
+FILE: 10-03-2017 01:03:55 PM [main] ERROR InstructorDAO Provided id of the wrong type for class entity.InstructorCourseEntity. Expected: class entity.PrimaryKey, got class java.lang.Class

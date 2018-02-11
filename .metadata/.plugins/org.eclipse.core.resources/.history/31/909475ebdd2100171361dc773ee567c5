@@ -1,0 +1,21 @@
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
+public class DataStreamExample {
+	public static void main(String[] args) {
+		
+		try {
+			FileInputStream fin=new FileInputStream("E:\\data.txt");
+			
+			fin.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

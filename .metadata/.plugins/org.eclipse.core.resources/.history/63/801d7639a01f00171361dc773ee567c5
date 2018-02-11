@@ -1,0 +1,10 @@
+import java.io.FileOutputStream;
+
+
+public class FileIOStreamExample {
+
+	public static void main(String[] args) {
+		
+		FileOutputStream fout=new FileOutputStream("D:\\example.txt");
+	}
+}

@@ -1,0 +1,11 @@
+import java.io.FileInputStream;
+
+
+public class ByteArrayStreamExample {
+	public static void main(String[] args) {
+
+		FileInputStream fin=new FileInputStream("E:\\orange.txt");
+		
+		
+	}
+}

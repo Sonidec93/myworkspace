@@ -1,0 +1,18 @@
+04 May 2017 12:55:57 AM [main]  INFO   Version- HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+04 May 2017 12:55:57 AM [main]  INFO   Version- HHH000412: Hibernate Core {4.3.11.Final}
+04 May 2017 12:55:57 AM [main]  INFO   Environment- HHH000206: hibernate.properties not found
+04 May 2017 12:55:57 AM [main]  INFO   Environment- HHH000021: Bytecode provider name : javassist
+04 May 2017 12:55:57 AM [main]  INFO   Configuration- HHH000043: Configuring from resource: resources/hibernate.cfg.xml
+04 May 2017 12:55:57 AM [main]  INFO   Configuration- HHH000040: Configuration resource: resources/hibernate.cfg.xml
+04 May 2017 12:55:57 AM [main]  WARN   DTDEntityResolver- HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+04 May 2017 12:55:57 AM [main]  INFO   Configuration- HHH000041: Configured SessionFactory: null
+04 May 2017 12:55:57 AM [main]  WARN   DriverManagerConnectionProviderImpl- HHH000402: Using Hibernate built-in connection pool (not for production use!)
+04 May 2017 12:55:57 AM [main]  INFO   DriverManagerConnectionProviderImpl- HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mydb]
+04 May 2017 12:55:57 AM [main]  INFO   DriverManagerConnectionProviderImpl- HHH000046: Connection properties: {user=root, password=****}
+04 May 2017 12:55:57 AM [main]  INFO   DriverManagerConnectionProviderImpl- HHH000006: Autocommit mode: false
+04 May 2017 12:55:57 AM [main]  INFO   DriverManagerConnectionProviderImpl- HHH000115: Hibernate connection pool size: 20 (min=1)
+04 May 2017 12:55:57 AM [main]  INFO   Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+04 May 2017 12:55:57 AM [main]  INFO   LobCreatorBuilder- HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+04 May 2017 12:55:57 AM [main]  INFO   TransactionFactoryInitiator- HHH000399: Using default transaction strategy (direct JDBC transactions)
+04 May 2017 12:55:57 AM [main]  INFO   ASTQueryTranslatorFactory- HHH000397: Using ASTQueryTranslatorFactory
+04 May 2017 12:55:58 AM [main]  INFO   DriverManagerConnectionProviderImpl- HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/mydb]

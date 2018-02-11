@@ -1,0 +1,13 @@
+127.0.0.1 - - [09/Jan/2018:00:05:17 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [09/Jan/2018:00:06:06 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:07:04 +0530] "GET /SpringmvchibernateAOP/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:07:05 +0530] "GET /SpringmvchibernateAOP/customer/list HTTP/1.1" 200 1137
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:07:18 +0530] "GET /SpringmvchibernateAOP/customer/deleteCustomer?customerId=8 HTTP/1.1" 500 8083
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:09:19 +0530] "GET /SpringmvchibernateAOP/customer/deleteCustomer?customerId=8 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:09:19 +0530] "GET /SpringmvchibernateAOP/customer/list HTTP/1.1" 200 523
+127.0.0.1 - - [09/Jan/2018:00:11:24 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:11:36 +0530] "GET /SpringmvchibernateAOP/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:11:38 +0530] "GET /SpringmvchibernateAOP/customer/list HTTP/1.1" 200 523
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:11:39 +0530] "GET /SpringmvchibernateAOP/customer/addCustomer HTTP/1.1" 200 1004
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:11:39 +0530] "GET /SpringmvchibernateAOP/resources/css/add-customer.css HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [09/Jan/2018:00:11:54 +0530] "POST /SpringmvchibernateAOP/customer/saveCustomer HTTP/1.1" 500 8083

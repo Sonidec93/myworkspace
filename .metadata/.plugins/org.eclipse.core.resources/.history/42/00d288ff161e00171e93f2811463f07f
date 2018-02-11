@@ -1,0 +1,24 @@
+import java.time.LocalDate;
+
+
+public class LocalDateExample {
+public static void main(String[] args) {
+	
+	LocalDate obj=LocalDate.now();
+	System.out.println(obj.getDayOfMonth());
+	System.out.println(obj.atStartOfDay());
+	System.out.println(obj.getDayOfYear());
+	System.out.println(obj.getMonthValue());
+	System.out.println(obj.isLeapYear());
+	LocalDate obj2=LocalDate.of(2018,4,10);
+	
+	System.out.println(obj.isBefore(obj2));
+	
+	//System.out.println(obj.plus(10));
+	
+		
+	
+	
+
+}
+}

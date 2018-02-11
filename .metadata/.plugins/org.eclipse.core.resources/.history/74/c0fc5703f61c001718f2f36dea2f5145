@@ -1,0 +1,33 @@
+package com.practice.trycatch;
+
+public class TryCatchExample {
+
+	
+	public static void main(String [] arg){
+		
+		
+	try{
+		int a[]=new int[5];
+		
+		a[5]=10;
+		System.out.println(a);
+	
+		try{
+			throw new ArithmeticException("just throwing unchecked exception");
+		}
+		finally{
+			System.out.println("hi there");
+		}
+	}
+	catch(ArithmeticException e){
+		
+		System.out.println(e.getMessage());
+	}
+	catch(ArrayIndexOutOfBoundsException e){
+		System.out.println(e);
+	}
+	catch(Exception e){
+		System.out.println(e.getMessage());
+	}
+	}
+}

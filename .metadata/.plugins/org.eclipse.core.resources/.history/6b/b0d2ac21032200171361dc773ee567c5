@@ -1,0 +1,28 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class FileWriterExample {
+	public static void main(String[] args) {
+		
+		FileWriter fw;
+		try {
+			fw = new FileWriter("E:\\orange.txt");
+			BufferedWriter bw=new BufferedWriter(fw);
+			
+			bw.append("i have appended some text in the file");
+			
+			bw.flush();
+			bw.close();
+			fw.close();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}

@@ -1,0 +1,15 @@
+package com.practice.vector;
+
+import java.util.Vector;
+
+public class VectorExample {
+ 
+	public static void main(String arg[]){
+		
+		Vector<String> vector=new Vector<String>();
+		
+		vector.add("mukul");
+		vector.addElement("sukhu");
+	}
+	
+}

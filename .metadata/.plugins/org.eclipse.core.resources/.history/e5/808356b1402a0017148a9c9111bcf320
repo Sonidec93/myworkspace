@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+	Log4j logger 
+}
+

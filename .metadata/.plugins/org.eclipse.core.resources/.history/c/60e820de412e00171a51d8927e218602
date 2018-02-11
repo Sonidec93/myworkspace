@@ -1,0 +1,24 @@
+package main;
+
+import com.practice.dao.EmployeeDao;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		try{
+			
+			EmployeeDao emp=resources.Factory.createEmployeeDao();
+			emp.
+
+		}catch(Exception e){
+			DOMConfigurator.configure("src/resources/Log4j.xml");
+			Logger.getLogger(MainClass.class).error(e.getMessage(),e);
+		}finally{
+
+			HibernateUtility.closeSessionFactory();
+		}
+
+	}
+
+}

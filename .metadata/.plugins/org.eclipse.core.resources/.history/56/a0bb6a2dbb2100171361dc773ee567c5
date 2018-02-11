@@ -1,0 +1,28 @@
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+
+public class BufferedStreamExample {
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Java uses the concept of buffered stream make the I/O operstions faster");
+		System.out.println("it stores an internal buffer");
+		
+		try {
+			FileInputStream fin= new FileInputStream("E:\\example.txt");
+			
+			BufferedInputStream bin=new BufferedInputStream(fin);
+			
+			while((int i=bin.read())!=-1)
+			
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

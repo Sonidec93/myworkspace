@@ -1,0 +1,4 @@
+127.0.0.1 - - [19/Oct/2017:21:26:06 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Oct/2017:21:26:36 +0530] "GET /RestFulWebservice/WEB-INF/classes/com/practice/restful/Employee.java HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [19/Oct/2017:21:26:47 +0530] "GET /RestFulWebservice/WEB-INF/classes/com/practice/restful/emp/ HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [19/Oct/2017:21:26:48 +0530] "GET /RestFulWebservice/WEB-INF/classes/com/practice/restful/emp/ HTTP/1.1" 404 992

@@ -1,0 +1,22 @@
+package com.example.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CollectionsExample {
+
+	public static void main(String arg[])
+	{
+		
+		List<String> mylist=new ArrayList<String>();
+		
+		mylist.add("mukul");
+		mylist.add("sukhman");
+		mylist.add("Aman");
+		
+		Collections.sort(mylist);
+		
+	}
+	
+}
